@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    component: nginx
+spec:
+  containers:
+  - name: nginx-container
+    image: hoge25/mynginx
+    ports:
+      - containerPort: 80

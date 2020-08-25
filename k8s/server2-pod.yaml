@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server2-pod
+  labels:
+    component: server2
+spec:
+  containers:
+  - name: server2-container
+    image: hoge25/server2
+    ports:
+      - containerPort: 8082
